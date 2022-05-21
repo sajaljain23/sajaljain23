@@ -15,7 +15,8 @@ def display(m, b, color='g--'):
     plt.ylim(-0.05,1.05)
     x = np.arange(-10, 10, 0.1)
     plt.plot(x, m*x+b, color)
-data = pd.read_csv(r"C:\Users\hplap\Downloads\data.csv")
+data = pd.read_csv(r"C:\Users\hplap\Downloads\data.csv")  #i have attached a data.csv file, pls download it and make change in 
+#data = pd.read_csv("data.csv") syntax accordingly as you save data.csv file in your pc system. thank you!!
 # data  = pd.read_csv("bros.csv")
 
 data.columns=[0,1,2]
@@ -25,7 +26,7 @@ X = np.array(data[[0,1]])
 y = np.array(data[2])
 # print(y)
 plot_points(X,y)
-# plt.show()
+plt.show()
 
 
 # Implement the following functions
